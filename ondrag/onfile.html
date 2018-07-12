@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>浅蓝</title>
+        <style type="text/css">
+            body,dl,dd,p,h1,h2,h3,h4,h5,h6,figure{margin:0;}
+            ol,ul{margin:0;padding:0;list-style:none;}
+            a{text-decoration:none;}
+            em{font-style: normal;}
+            img{border:none;}
+            input{outline: none;}
+            .clearfix:after{content: "";display: block;clear: both;}
+            .fr{float: right;}
+            .fl{float: left;}
+            i{font-style: normal;}
+            b{font-weight: normal;}
+            html,body{
+                width: 100%;
+                height: 100%;
+                background: #ccc;
+            }
+            #wrap{
+                width: 1000px;
+                min-height: 566px;
+                height: auto;
+                margin: 100px auto;
+                background: #fff;
+                overflow: hidden;
+            }
+            #wrap h1{
+                width: 100%;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+            }
+            #wrap .area{
+                width: 100%;
+                height: 200px;
+                border-top: 1px solid #ccc;
+            }
+            #wrap .area .upload{
+                position: relative;
+                width: 260px;
+                height: 160px;
+                margin: 20px;
+                background: #ccc;
+                overflow: hidden;
+            }
+            #wrap .area .upload span{
+                display: block;
+                width: 100%;
+                height: 120px;
+                background: url("images/image.png") no-repeat center center/100px 100px;
+            }
+            #wrap .area .upload input{
+                position: absolute;
+                top: -10000px;
+                left: -10000px;
+            }
+            #wrap .area .upload label{
+                display: block;
+                width: 100%;
+                height: 40px;
+                background: green;
+                border-radius: 5%;
+                font-size: 20px;
+                line-height: 40px;
+                text-align: center;
+            }
+            #wrap .area .drag{
+                width: 660px;
+                height: 160px;
+                margin: 20px;
+                background: #ccc;
+                color: indianred;
+                font-size: 25px;
+                line-height: 160px;
+                text-align: center;
+            }
+            #wrap .info{
+                width: 90%;
+                height: 40px;
+                margin: 30px auto;
+            }
+            #wrap .info .right input{
+                position: absolute;
+                top: -10000px;
+                left: -10000px;
+            }
+            #wrap .info .right .public{
+                display: inline-block;
+                width: 100px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                background: #35ab52;
+                border-radius: 5%;
+            }
+            #wrap .schedule{
+                width: 98%;
+                min-height: 200px;
+                height: auto;
+                border: 1px solid #ccc;
+                margin: auto;
+            }
+            #wrap .schedule ul li{
+                position: relative;
+                float: left;
+                width: 160px;
+                height: 100px;
+                margin: 0 0 2px 2px  ;
+            }
+            #wrap .schedule ul li p{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 30px;
+                background: rgba(0,0,0,.5);
+                opacity: 0;
+                color: white;
+                line-height: 30px;
+                text-align: left;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                transition: opacity 1s;
+            }
+            #wrap .schedule ul li:hover p{
+                opacity: 1;
+            }
+            #wrap .schedule ul li p i{
+                display: block;
+                position: absolute;
+                top: 3px;
+                right: 0;
+                width: 24px;
+                height: 24px;
+                margin-left: 90%;
+                background: url("images/del.png") no-repeat;
+                cursor: pointer;
+            }
+            label,div{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="wrap">
+            <h1>拖拽案列</h1>
+            <section class="area clearfix">
+                <article class="upload fl">
+                    <span></span>
+                    <input type="file" multiple accept="image/jpeg image/jpg image/gif image/png" id="file"/>
+                    <label for="file">点我上传</label>
+                </article>
+                <article class="drag fr"></article>
+            </section>
+            <section class="info">
+                <article class="left fl">
+                    <span>已选中<em>0</em>张图片</span>
+                    <span>共<em>0</em>MB</span>
+                </article>
+                <article class="right fr">
+                    <input type="file" id="file2" />
+                    <label for="file2" class="public">继续上传</label>
+                    <div class="btn public">开始上传</div>
+                </article>
+            </section>
+            <section class="schedule">
+                <ul></ul>
+            </section>
+        </section>
+        <script src="js/index.js"></script>
+    </body>
+</html>

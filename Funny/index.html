@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>浅蓝</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script>
+            resize();
+            function resize(){
+                var html = document.querySelector("html");
+                var w = html.getBoundingClientRect().width;
+                if( w >= 750 ){
+                    w = 750;
+                }
+                html.style.fontSize = w/10 + "px";
+            }
+            window.addEventListener("resize",resize);
+        </script>
+        <style>
+            body,l,dd,p, h1,h2, h3,h4,h5,h6,figure {margin: 0;}
+            ol,ul {margin: 0;padding: 0;list-style: none;}
+            a {text-decoration: none;}
+            img {border: none;}
+            input {outline: none;}
+            i {font-style: normal;}
+            b {font-weight: normal;}
+            @font-face {font-family: "iconfont";
+                src: url('iconfont.eot?t=1527600055417'); /* IE9*/
+                src: url('iconfont.eot?t=1527600055417#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+                url('iconfont.ttf?t=1527600055417') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+                url('iconfont.svg?t=1527600055417#iconfont') format('svg'); /* iOS 4.1- */
+            }
+            .iconfont {
+                font-family:"iconfont" !important;
+                font-size:16px;
+                font-style:normal;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .icon-tiaozhuan:before { content: "\e61a"; }
+            .icon-shangyige:before { content: "\e600"; }
+            .icon-xiayige2:before { content: "\e601"; }
+            #mainBody {
+                position: relative;
+                width: 10rem;
+            }
+            #mainBody .con {
+                width: 100%;
+            }
+            #mainBody .con li {
+                width: 9.8rem;
+                height: auto;
+                padding: 0.13333333rem 0.1rem;
+                font-size: 0.26666667rem;
+            }
+            #mainBody .con li b {
+                margin-left: 0.06666667rem;
+                font-size: 0.37333333rem;
+            }
+            #mainBody .con li h4 {
+                padding: 0.13333333rem 0;
+            }
+            #mainBody .dire {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                background: rgba(0, 0, 0, 0.3);
+            }
+            #mainBody .dire li {
+                width: 80%;
+                height: 0.4rem;
+                margin: auto;
+                background: #fff;
+                padding: 0.2rem 0;
+                font-size: 0.33333333rem;
+                border-bottom: 0.01333333rem solid #ccc;
+            }
+            #mainBody .dire li b {
+                margin-left: 0.26666667rem;
+                font-size: 0.33333333rem;
+            }
+            #mainBody .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1.33333333rem;
+            }
+            #mainBody .footer .fnav {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                border-top-right-radius: 10%;
+                border-top-left-radius: 10%;
+                background: #fff;
+                flex-wrap: nowrap;
+            }
+            #mainBody .footer .fnav li {
+                position: relative;
+                width: 3.33333333rem;
+                height: 100%;
+                text-align: center;
+            }
+            #mainBody .footer .fnav li i {
+                display: block;
+                line-height: 0.8rem;
+                font-size: 0.6rem;
+            }
+            #mainBody .footer .fnav li span {
+                display: block;
+                font-size: 0.33333333rem;
+                line-height: 0.46666667rem;
+            }
+            #mainBody .footer .fnav li input {
+                display: none;
+                position: absolute;
+                top: 0.53333333rem;
+                left: 0.13333333rem;
+                width: 3.06666667rem;
+                height: 0.26666667rem;
+                border: 0.01333333rem solid #cbd5cb;
+                font-size: 0.26666667rem;
+                line-height: 0.4rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mainBody">
+            <ul class="con"></ul>
+            <div class="footer">
+                <ul class="fnav">
+                    <li>
+                        <i class="iconfont icon-shangyige"></i>
+                        <span>上一页</span>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-tiaozhuan"></i>
+                        <span>跳转至</span>
+                        <input type="text" placeholder=""/>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-xiayige2"></i>
+                        <span>下一页</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <script >
+            var oMainBody = document.querySelector("#mainBody"),
+                oCon = document.querySelector(".con"),
+                oFooter = document.querySelector(".footer"),
+                aInp = document.querySelector("input"),
+                aBtn = oFooter.querySelector(".fnav").querySelectorAll("li");
+            var page = 1;
+            request();
+            function request(){
+                function formatterDateTime() {
+                    var date=new Date();
+                    var month=date.getMonth() + 1;
+                    var datetime = date.getFullYear()
+                        + ""// "年"
+                        + (month >= 10 ? month : "0"+ month)
+                        + ""// "月"
+                        + (date.getDate() < 10 ? "0" + date.getDate() : date
+                            .getDate())
+                        + ""
+                        + (date.getHours() < 10 ? "0" + date.getHours() : date
+                            .getHours())
+                        + ""
+                        + (date.getMinutes() < 10 ? "0" + date.getMinutes() : date
+                            .getMinutes())
+                        + ""
+                        + (date.getSeconds() < 10 ? "0" + date.getSeconds() : date
+                            .getSeconds());
+                    return datetime;
+                }
+                $.ajax({
+                    type: 'post',
+                    url: 'http://route.showapi.com/341-1',
+                    dataType: 'json',
+                    data: {
+                        "showapi_timestamp": formatterDateTime(),
+                        "showapi_appid": '62699', //这里需要改成自己的appid
+                        "showapi_sign": '2ce26a81953241dd8c424b5c8535b908',  //这里需要改成自己的应用的密钥secret
+                        "page": page,
+                        "maxResult":"50"
+                    },
+                    error: function(XmlHttpRequest, textStatus, errorThrown){
+                        alert("操作失败!");
+                    },
+                    success: function(result) {
+                        var date = result.showapi_res_body.contentlist,
+                            len = date.length;
+                        for (var i = 0; i < len; i++) {
+                            //$.ajaxSettings.async = false;
+                            var li = document.createElement("li"),
+                                title = document.createElement("li");
+                            title.className = "title";
+                            title.innerHTML = "<b>" + (i + 1).toString() + "</b>" + ".  " + date[i].title;
+                            li.innerHTML = "<h4 style='text-align:center'>" + date[i].title + "</h4>" + "<b>" + (i + 1).toString() + "</b>" + ".  " + date[i].text;
+                            oCon.appendChild(li);
+                            li.style.background = setColor();
+                        }
+                        var h = parseFloat(getStyle(oFooter, "height"));
+                        oMainBody.style.marginBottom = h + "px";
+                    }
+                });
+            }
+            function setColor(){
+                var r = Math.floor(Math.random()*(0+255)),
+                    g = Math.floor(Math.random()*(0+255)),
+                    b = Math.floor(Math.random()*(0+255)),
+                    a = Math.random()*(0+1);
+                return "rgba("+r+","+g+","+b+","+a+")";
+            }
+            function getStyle(obj,attr){
+                return window.getComputedStyle?getComputedStyle(obj)[attr]:obj.currentStyle(attr);
+            }
+            aInp.onblur = function(){
+                this.style.display = "none";
+                aBtn[1].children[0].style.display = aBtn[1].children[1].style.display = "block";
+                if( !this.value ){
+                    return;
+                }
+                if( isNaN(this.value*1) ){
+                    alert("请输入数字");
+                    this.focus();
+                    return;
+                }
+                this.value*1 <= 0||this.value*1 >= 99?page=1:page=this.value*1;
+                oCon.innerHTML = "";
+                request();
+            };
+            for( let i=0;i<aBtn.length;i++ ){
+                aBtn[i].ontouchstart = function(){
+                    this.style.background = setColor();
+                };
+                aBtn[i].ontouchend = function(){
+                    this.style.background = "#fff";
+                    if( i === 0 || i=== 2 ){
+                        if( i===0 ){
+                            page > 1?page--:page = 99;
+                        }else if( i===2 ){
+                            page >= 99?page = 1:page++;
+                        }
+                        oCon.innerHTML = "";
+                        request();
+                    }
+                    if( i === 1 ){
+                        aInp.focus();
+                        this.children[0].style.display = this.children[1].style.display = "none";
+                        this.children[2].style.display = "block";
+                        this.children[2].setAttribute("placeholder","(最大99)当前在第"+page+"页");
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
